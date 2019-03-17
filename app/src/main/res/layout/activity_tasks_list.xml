@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/swipe_activity_tasks_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <FrameLayout
+            android:id="@+id/fr_container_activity_tasks_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".tasks_list_feature.TasksListActivity">
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec_activity_tasks_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/ic_fb_bg"
+                android:src="@android:drawable/ic_input_add"
+        />
+    </FrameLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

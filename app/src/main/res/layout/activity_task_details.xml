@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        tools:context=".task_details_feature.TaskDetailsActivity">
+
+    <LinearLayout
+            android:id="@+id/ll_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Title with long text Title with long text Title with long text "/>
+        <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:layout_gravity="left"
+                tools:text="Tusday 19 Feb, 2019"/>
+
+
+    </LinearLayout>
+    <TextView
+            android:id="@+id/tv_priority_lable"
+            android:text="@string/priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ll_title_container"/>
+    <TextView
+            android:id="@+id/tv_priority_value"
+            android:text="@string/priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_arrow_upward"
+            android:layout_below="@+id/ll_title_container"/>
+    <View
+            android:id="@+id/view_separator_one"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_priority_lable"
+            android:background="@color/colorPrimary"
+            android:layout_margin="8dp"/>
+    <TextView
+            android:id="@+id/tv_descr_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@+id/view_separator_one"
+            android:layout_alignParentLeft="true"
+            android:text="@string/description"/>
+    <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@+id/tv_descr_label"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            tools:text="Some description text"/>
+    <View
+            android:id="@+id/view_separator_second"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_description"
+            android:background="@color/colorPrimary"
+            android:layout_margin="8dp"/>
+
+    <TextView
+            android:id="@+id/tv_notif_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@+id/view_separator_second"
+            android:layout_alignParentLeft="true"
+            android:text="@string/notification"/>
+
+    <TextView
+            android:id="@+id/tv_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@+id/view_separator_second"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:text="@string/ten_minute_before"/>
+
+    <View
+            android:id="@+id/view_separator_three"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_notif_label"
+            android:background="@color/colorPrimary"
+            android:layout_margin="8dp"/>
+    <Button
+            android:id="@+id/but_delete_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/delete_event"/>
+    <ProgressBar android:id="@+id/progress"
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_centerHorizontal="true"
+                 android:visibility="gone"/>
+</RelativeLayout>
